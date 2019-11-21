@@ -1,0 +1,12 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the pelajar_init() hook (in hooks/pelajar.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="pelajar-nama-<%%VALUE(pelajarID)%%>" class="pelajar-nama"><%%SELECT%%><%%VALUE(nama)%%><%%ENDSELECT%%></td>
+		<td id="pelajar-umur-<%%VALUE(pelajarID)%%>" class="pelajar-umur"><%%SELECT%%><%%VALUE(umur)%%><%%ENDSELECT%%></td>
+		<td id="pelajar-alamat-<%%VALUE(pelajarID)%%>" class="pelajar-alamat"><%%SELECT%%><%%VALUE(alamat)%%><%%ENDSELECT%%></td>
+		<td id="pelajar-subjek-<%%VALUE(pelajarID)%%>" class="pelajar-subjek"><%%SELECT%%><%%VALUE(subjek)%%><%%ENDSELECT%%></td>
+		<td id="pelajar-statusYuran-<%%VALUE(pelajarID)%%>" class="pelajar-statusYuran"><%%SELECT%%><%%VALUE(statusYuran)%%><%%ENDSELECT%%></td>
